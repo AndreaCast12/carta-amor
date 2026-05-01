@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Carta para mi amor ⚡</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        color: white;
+    }
+
+    .carta {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        width: 350px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        backdrop-filter: blur(10px);
+    }
+
+    h1 {
+        color: #ffd700;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        background: #ffd700;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #ffcc00;
+    }
+
+    .imagen {
+        margin-top: 20px;
+        display: none;
+    }
+
+    .imagen img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    }
+</style>
+</head>
+
+<body>
+
+<div class="carta">
+    <h1>Para ti ⚡💛</h1>
+    <p>
+        Amor, así como llevas energía a tantos lugares,
+        tú llenas mi vida de luz todos los días.<br><br>
+        Eres mi corriente favorita, mi chispa y mi razón de sonreír.
+    </p>
+
+    <button onclick="mostrarImagen()">Haz clic aquí ❤️</button>
+
+    <div class="imagen" id="imagen">
+    <img src="../imagen/foto.jpeg" alt="Imagen romántica">
+
+    <!-- Botón de descarga -->
+    <br><br>
+    <a href="../imagen/foto.jpeg" download="mi_amor.jpeg">
+        <button>Descargar imagen 💾</button>
+    </a>
+
+    <p>Te amo muchísimo ⚡💖</p>
+</div>
+</div>
+
+<script>
+    function mostrarImagen() {
+        document.getElementById("imagen").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
